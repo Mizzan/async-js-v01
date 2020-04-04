@@ -1,3 +1,5 @@
+// 5. creating the callback function for reusable code :D
+const getData = (callback) => {
   // 1. first creating the async request variable
   const request = new XMLHttpRequest();
 
@@ -17,3 +19,17 @@
 
   // 3. receiving the response
   request.send()
+}
+
+
+// 6. calling the callback function
+
+// 7. callback taking an argument ( err - for error catching -- data - for data catching)
+getData((err, data) => {
+  console.log('callback fired');
+  if(err) {
+    console.log(err);
+  } else {
+    console.log(data);
+  }
+})
