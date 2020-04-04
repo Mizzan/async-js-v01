@@ -1,6 +1,6 @@
 // using async and await
 const getData = async () => {
-  const response = await fetch('./todos/messsi.json');
+  const response = await fetch('./todos/messi.json');
 
   if(response.status !== 200) {
     throw new Error('can not fetch the data.')
